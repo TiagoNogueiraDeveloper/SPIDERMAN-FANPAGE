@@ -19,14 +19,12 @@ container{
 }
 .navmenu{
     display: none;
-    /* flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #333;
-    padding: 20px; */
 }
 .hamburguer:checked ~ .navmenu{
     cursor: pointer;
