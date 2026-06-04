@@ -20,4 +20,4 @@ Este é um projeto de Front-End focado na criação de uma fanpage dedicada à t
 
 1. Clone este repositório para a sua máquina local:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone [https://github.com/TiagoNogueiraDeveloper/SPIDERMAN-FANPAGE.git](https://github.com/TiagoNogueiraDeveloper/SPIDERMAN-FANPAGE.git)
