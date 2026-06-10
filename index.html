@@ -6,28 +6,28 @@
     <title>Home(Spider-Verse)</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./img/faviconSpider-Verse.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="menu">
-        <h1>
-            Spider-Verse
-        </h1>
-        <!-- Botão do menu hamburguer -->
-        <div class="container">
-            <button class="hamburguer" id="hamburguer" onclick="navmenu.classList.toggle('active')">
-                &#9776;
-            </button>
-            <!-- Menu de navegação -->
-             <nav class="navmenu" id="navmenu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./html/origem.html">Origem</a></li>
-                    <li><a href="./html/versoes.html">Versões</a></li>
-                    <li><a href="./html/sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="logo">SPIDER-VERSE</div>
+
+        <button class="Hamburguer" id="Hamburguer"
+            onclick="navmenu.classList.toggle('active');">
+            <img src="./img/Marvels-Spider-Man-2-Logo.png" alt="Menu">
+        </button>
+
+        <div class="nav-menu" id="navmenu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/origem.html">Origem</a></li>
+                <li><a href="./html/versoes.html">Versões</a></li>
+                <li><a href="./html/sobre.html">Sobre</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
     <main>
         <section class="introducao">
              <header>
@@ -40,6 +40,37 @@
                 <h3>O que é a Spider-Verse?</h3>
             </header>
             <p>Spider-Verse é o conceito do multiverso do Homem-Aranha, onde várias versões do herói existem em realidades diferentes. É um universo expandido que reúne Peter Parker e seus equivalentes alternativos — como Miles Morales, Gwen Stacy como Spider-Woman, Miguel O’Hara (Spider-Man 2099) e muitos outros — mostrando como cada um lida com seus poderes, responsabilidades e desafios únicos.</p>
+        </section>
+
+        <section class="conteudo tabela-bloco">
+            <header>
+                <h3>Avaliações dos filmes do Homem-Aranha</h3>
+            </header>
+            <p class="subtexto">Classificação baseada em notas públicas da fonte confiável IMDb, com destaque para os atores que interpretaram ou deram voz ao herói.</p>
+            <div class="tabela-wrap">
+                <table class="tabela-avaliacoes">
+                    <thead>
+                        <tr>
+                            <th>Filme</th>
+                            <th>Ator / Voz</th>
+                            <th>Nota IMDb</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Spider-Man (2002)</td><td>Tobey Maguire</td><td>7,4/10</td><td>★★★★☆</td></tr>
+                        <tr><td>Spider-Man 2 (2004)</td><td>Tobey Maguire</td><td>7,5/10</td><td>★★★★☆</td></tr>
+                        <tr><td>Spider-Man 3 (2007)</td><td>Tobey Maguire</td><td>6,3/10</td><td>★★★☆☆</td></tr>
+                        <tr><td>The Amazing Spider-Man (2012)</td><td>Andrew Garfield</td><td>6,5/10</td><td>★★★☆☆</td></tr>
+                        <tr><td>The Amazing Spider-Man 2 (2014)</td><td>Andrew Garfield</td><td>5,4/10</td><td>★★★☆☆</td></tr>
+                        <tr><td>Captain America: Civil War (2016)</td><td>Tom Holland</td><td>7,8/10</td><td>★★★★☆</td></tr>
+                        <tr><td>Spider-Man: Homecoming (2017)</td><td>Tom Holland</td><td>7,4/10</td><td>★★★★☆</td></tr>                       
+                        <tr><td>Spider-Man: Far From Home (2019)</td><td>Tom Holland</td><td>7,5/10</td><td>★★★★☆</td></tr>
+                        <tr><td>Spider-Man: No Way Home (2021)</td><td>Tom Holland</td><td>8,2/10</td><td>★★★★☆</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="fonte">Fonte usada: IMDb (International Movie Database).</p>
         </section>
         <section class="conteudo">
             <header>

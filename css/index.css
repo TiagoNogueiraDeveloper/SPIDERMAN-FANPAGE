@@ -1,107 +1,255 @@
+/*IDEIA DE LAYOUT, SUJEITO A MUDANÇAS!! */
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-button{
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-}
-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-.navmenu{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-}
-.hamburguer:checked ~ .navmenu{
-    cursor: pointer;
-    display: flex;
-}
-.navmenu.active{
-    display: block;
-    
-}
-.navmenu ul{
-    list-style: none;
-}
-@media screen and (min-width: 768px){
-    .hamburguer{
-        display: none;
-    }
-    .navmenu{
-        display: flex;
-        flex-direction: row;
-        position: static;
-        background-color: transparent;
-        padding: 0;
-    }
-    .navmenu ul{
-        display: flex;
-        gap: 20px;
-    }
-}
-.navmenu ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-.menu{
-    color: #ff0000;
-    font-size: 24px;
-    text-align: center;
-    background-color: #000;
-    padding: 10px;
-}
+
 body{
-  /* background-color: #111; cor de fundo */
-  /* ou, se quiser imagem de fundo: */
-  background: #111 url('../img/backgroundIndexSpiderMan.jpg') no-repeat center/cover;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../img/backgroundIndexSpiderMan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
 }
-.conteudo{
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+nav{
+    background: rgba(0,0,0,0.85);
+    padding: 15px 25px;
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.conteudo h3{
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 10px;
+
+.logo{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:3.5rem;
+    color:#ff2d2d;
+    letter-spacing:4px;
 }
-.conteudo p{
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    margin-bottom: 20px;
+
+.Hamburguer{
+    background:none;
+    border:none;
+    cursor:pointer;
 }
-.introducao{
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+.Hamburguer img{
+    width:70px;
+    height:auto;
 }
+
+.nav-menu{
+    display:none;
+}
+
+.nav-menu.active{
+    display:block;
+    position:absolute;
+    top:95px;
+    right:20px;
+    background:rgba(0,0,0,0.95);
+    padding:20px;
+    border-radius:15px;
+}
+
+.nav-menu.active ul{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    list-style:none;
+}
+
+.nav-menu.active a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media screen and (min-width:800px){
+
+    .Hamburguer{
+        display:none;
+    }
+
+    .nav-menu{
+        display:block;
+    }
+
+    .nav-menu ul{
+        display:flex;
+        gap:20px;
+        list-style:none;
+        align-items:center;
+    }
+
+    .nav-menu a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        padding:8px 12px;
+        border-radius:5px;
+    }
+
+    .nav-menu a:hover{
+        background:#e53935;
+    }
+}
+
+/* CONTEÚDO */
+
+main{
+    width:80%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+
+
+h2{
+    text-align:center;
+    color:#ff3b3b;
+    margin-bottom:30px;
+    font-size:2.2rem;
+}
+
+p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+article{
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    margin-top:20px;
+    border-radius:15px;
+    border-left:5px solid #ff3b3b;
+}
+
+h3{
+    color:#ff3b3b;
+    margin-bottom:10px;
+}
+
 footer{
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.7);
+    margin-top:30px;
+}
+/* TABELA AVALIACOES */
+.tabela-bloco{
+    margin-top:30px;
+}
+
+.subtexto{
+    text-align:center;
+    color:#e6e6e6;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.tabela-wrap{
+    overflow-x:auto;
+}
+
+.tabela-avaliacoes{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(0,0,0,0.45);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.tabela-avaliacoes th,
+.tabela-avaliacoes td{
+    padding:12px 10px;
+    text-align:left;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.tabela-avaliacoes th{
+    background:rgba(255,45,45,0.18);
+    color:#ffdede;
+    font-size:15px;
+}
+
+.tabela-avaliacoes td{
+    color:#fff;
+    font-size:15px;
+}
+
+.tabela-avaliacoes tr:hover{
+    background:rgba(255,255,255,0.05);
+}
+
+.fonte{
+    margin-top:10px;
+    text-align:center;
+    color:#ffb3b3;
+    font-size:14px;
+}
+
+/* CELULAR */
+
+@media screen and (max-width:500px){
+
+    body{
+        background-image:
+            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url("../img/WALLPAPER_VERT.png");
+
+        background-size:cover;
+        background-position:center top;
+    }
+
+    .logo{
+        font-size:2.2rem;
+    }
+
+    main{
+        width:95%;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width:800px){
+
+    .Hamburguer{
+        display:none;
+    }
+
+    .nav-menu{
+        display:block;
+    }
+
+    .nav-menu ul{
+        display:flex;
+        gap:20px;
+        align-items:center;
+    }
+
+    .nav-menu a{
+        padding:8px 12px;
+        border-radius:5px;
+    }
+
+    .nav-menu a:hover{
+        background:#e53935;
+    }
 }

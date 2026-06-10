@@ -1,0 +1,241 @@
+/*IDEIA DE LAYOUT, SUJEITO A MUDANÇAS!! */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../img/backgroundIndexSpiderMan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+}
+
+nav{
+    background: rgba(0,0,0,0.85);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:3.5rem;
+    color:#ff2d2d;
+    letter-spacing:4px;
+}
+
+.Hamburguer{
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.Hamburguer img{
+    width:70px;
+    height:auto;
+}
+
+.nav-menu{
+    display:none;
+}
+
+.nav-menu.active{
+    display:block;
+    position:absolute;
+    top:95px;
+    right:20px;
+    background:rgba(0,0,0,0.95);
+    padding:20px;
+    border-radius:15px;
+}
+
+.nav-menu.active ul{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    list-style:none;
+}
+
+.nav-menu.active a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media screen and (min-width:800px){
+
+    .Hamburguer{
+        display:none;
+    }
+
+    .nav-menu{
+        display:block;
+    }
+
+    .nav-menu ul{
+        display:flex;
+        gap:20px;
+        list-style:none;
+        align-items:center;
+    }
+
+    .nav-menu a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        padding:8px 12px;
+        border-radius:5px;
+    }
+
+    .nav-menu a:hover{
+        background:#e53935;
+    }
+}
+
+main{
+    width:80%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+h2{
+    text-align:center;
+    color:#ff3b3b;
+    margin-bottom:30px;
+    font-size:2.2rem;
+}
+
+p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.conteudo{
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    margin-top:20px;
+    border-radius:15px;
+    border-left:5px solid #ff3b3b;
+}
+
+h3{
+    color:#ff3b3b;
+    margin-bottom:10px;
+}
+
+.formulario-site{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:15px;
+}
+
+.formulario-site label{
+    color:#ffe3e3;
+    font-weight:bold;
+}
+
+.formulario-site input,
+.formulario-site textarea{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.15);
+    background:rgba(10,10,10,0.75);
+    color:#fff;
+    font-size:15px;
+}
+
+.formulario-site input::placeholder,
+.formulario-site textarea::placeholder{
+    color:#d7d7d7;
+}
+
+.formulario-site button{
+    align-self:flex-start;
+    background:#ff3b3b;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px 16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:background 0.2s ease;
+}
+
+.formulario-site button:hover{
+    background:#ff5a5a;
+}
+
+.desenvolvedores-bloco a{
+    color:#ffdede;
+    text-decoration:none;
+}
+
+.desenvolvedores-bloco a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.7);
+    margin-top:30px;
+}
+
+@media screen and (max-width:500px){
+
+    body{
+        background-image:
+            linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url("../img/WALLPAPER_VERT.png");
+
+        background-size:cover;
+        background-position:center top;
+    }
+
+    .logo{
+        font-size:2.2rem;
+    }
+
+    main{
+        width:95%;
+    }
+}
+
+@media screen and (min-width:800px){
+
+    .Hamburguer{
+        display:none;
+    }
+
+    .nav-menu{
+        display:block;
+    }
+
+    .nav-menu ul{
+        display:flex;
+        gap:20px;
+        align-items:center;
+    }
+
+    .nav-menu a{
+        padding:8px 12px;
+        border-radius:5px;
+    }
+
+    .nav-menu a:hover{
+        background:#e53935;
+    }
+}
