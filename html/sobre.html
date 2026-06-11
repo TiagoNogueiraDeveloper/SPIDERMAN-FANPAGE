@@ -1,84 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre(Spider-Verse)</title>
+
     <link rel="stylesheet" href="../css/sobre.css">
     <link rel="icon" href="../img/faviconSpider-Verse.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">SPIDER-VERSE</div>
 
-        <button class="Hamburguer" id="Hamburguer"
-            onclick="navmenu.classList.toggle('active');">
-            <img src="../img/Marvels-Spider-Man-2-Logo.png" alt="Menu">
-        </button>
+    <!-- Cabeçalho -->
+    <header>
 
-        <div class="nav-menu" id="navmenu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="origem.html">Origem</a></li>
-                <li><a href="versoes.html">Versões</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav>
 
+            <div class="logo">SPIDER-VERSE</div>
+
+            <button class="Hamburguer" id="Hamburguer"
+                onclick="navmenu.classList.toggle('active');">
+                <img src="../img/Marvels-Spider-Man-2-Logo.png" alt="Menu">
+            </button>
+
+            <div class="nav-menu" id="navmenu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="origem.html">Origem</a></li>
+                    <li><a href="versoes.html">Versões</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal -->
     <main>
+
         <section class="introducao">
+
             <header>
                 <h2>Sobre esta fanpage</h2>
             </header>
-            <p>Esta página foi criada para reunir informações, curiosidades e referências sobre o universo Spider-Verse, destacando as versões mais marcantes do Homem-Aranha em diferentes realidades.</p>
+
+            <p>
+                Esta página foi criada para reunir informações, curiosidades e referências sobre o universo Spider-Verse,
+                destacando as versões mais marcantes do Homem-Aranha em diferentes realidades.
+            </p>
+
         </section>
 
         <section class="conteudo">
+
             <header>
                 <h3>Objetivo da fanpage</h3>
             </header>
-            <p>O objetivo é proporcionar uma experiência visual e organizada para fãs que desejam explorar a origem, as versões e os principais personagens ligados ao multiverso aracnídeo.</p>
+
+            <p>
+                O objetivo é proporcionar uma experiência visual e organizada para fãs que desejam explorar a origem,
+                as versões e os principais personagens ligados ao multiverso aracnídeo.
+            </p>
+
         </section>
 
         <section class="conteudo">
+
             <header>
                 <h3>O que você encontra aqui</h3>
             </header>
-            <p>Na fanpage, você pode navegar por histórias, versões alternativas, referências do universo e detalhes sobre a cultura que cercou a Spider-Verse ao longo dos anos.</p>
+
+            <p>
+                Na fanpage, você pode navegar por histórias, versões alternativas, referências do universo
+                e detalhes sobre a cultura que cercou a Spider-Verse ao longo dos anos.
+            </p>
+
         </section>
 
         <section class="conteudo formulario-bloco">
+
             <header>
                 <h3>Deixe sua opinião</h3>
             </header>
-            <p>Conte qual é o seu filme favorito do Homem-Aranha e avalie como ficou esta fanpage.</p>
+
+            <p>
+                Conte qual é o seu filme favorito do Homem-Aranha e avalie como ficou esta fanpage.
+            </p>
 
             <form class="formulario-site">
-                <label for="filmeFavorito">1. Filme favorito do Homem-Aranha</label>
-                <input type="text" id="filmeFavorito" name="filmeFavorito" placeholder="Ex.: Spider-Man: No Way Home">
 
-                <label for="avaliacao">2. Avaliação para o site</label>
-                <textarea id="avaliacao" name="avaliacao" rows="5" placeholder="Digite sua opinião sobre a página, design, conteúdo e experiência..."></textarea>
+                <label for="nome">1. Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">2. E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="filmeFavorito">3. Filme favorito do Homem-Aranha</label>
+                <input type="text" id="filmeFavorito" name="filmeFavorito"
+                    placeholder="Ex.: Spider-Man: No Way Home">
+
+                <label for="conheceu">4. Onde conheceu nossa fanpage?</label>
+
+                <select id="conheceu" name="conheceu">
+                    <option value="">Selecione uma opção</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="google">Google</option>
+                    <option value="amigos">Indicação de amigos</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label>5. Você recomendaria esta fanpage?</label>
+
+                <div class="radio-group">
+
+                    <label class="radio-option">
+                        <input type="radio" name="recomenda" value="sim">
+                        Sim
+                    </label>
+
+                    <label class="radio-option">
+                        <input type="radio" name="recomenda" value="nao">
+                        Não
+                    </label>
+
+                </div>
+
+                <label for="avaliacao">6. Avaliação para o site</label>
+
+                <textarea
+                    id="avaliacao"
+                    name="avaliacao"
+                    rows="5"
+                    placeholder="Digite sua opinião sobre a página, design, conteúdo e experiência..."></textarea>
 
                 <button type="submit">Enviar feedback</button>
+
             </form>
+
         </section>
 
         <section class="conteudo desenvolvedores-bloco">
+
             <header>
                 <h3>Quem desenvolveu esta página</h3>
             </header>
-            <p>Esta fanpage foi desenvolvida por <strong>Tiago Brandão Nogueira</strong> — <a href="https://github.com/TiagoNogueiraDeveloper" target="_blank" rel="noopener noreferrer">github.com/TiagoNogueiraDeveloper</a> e <strong>Ryan Lucca</strong> — <a href="https://github.com/ryanluccadev" target="_blank" rel="noopener noreferrer">github.com/ryanluccadev</a>.</p>
-            <p>Ela também foi criada como um complemento dos nossos estudos no curso de <strong>Tecnologia em Sistemas para Internet</strong>, no <strong>IFSP</strong>, reunindo prática de desenvolvimento web, design e organização de conteúdo.</p>
+
+            <p>
+                Esta fanpage foi desenvolvida por <strong>Tiago Brandão Nogueira</strong> —
+                <a href="https://github.com/TiagoNogueiraDeveloper" target="_blank" rel="noopener noreferrer">
+                    github.com/TiagoNogueiraDeveloper
+                </a>
+                e <strong>Ryan Lucca</strong> —
+                <a href="https://github.com/ryanluccadev" target="_blank" rel="noopener noreferrer">
+                    github.com/ryanluccadev
+                </a>.
+            </p>
+
+            <p>
+                Ela também foi criada como um complemento dos nossos estudos no curso de
+                <strong>Tecnologia em Sistemas para Internet</strong>, no <strong>IFSP</strong>,
+                reunindo prática de desenvolvimento web, design e organização de conteúdo.
+            </p>
+
         </section>
+
     </main>
-    
-     <footer>
-            <p>&copy; 2026 Spider-Verse Fanpage. Todos os direitos reservados.</p>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Spider-Verse Fanpage. Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
 </html>

@@ -1,170 +1,223 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* =========================
+   RESET GERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family:Arial, sans-serif;
+    color:white;
+
     background-image:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url("../img/backgroundIndexSpiderMan.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
-nav {
-    background: rgba(0,0,0,0.85);
-    padding: 15px 25px;
+nav{
+    background:rgba(0,0,0,0.85);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding:15px 25px;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-.logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.5rem;
-    color: #ff2d2d;
-    letter-spacing: 4px;
+/* Logo */
+
+.logo{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:3.5rem;
+    color:#ff2d2d;
+    letter-spacing:4px;
 }
 
-.Hamburguer {
-    background: none;
-    border: none;
-    cursor: pointer;
+/* Botão hamburguer */
+
+.Hamburguer{
+    background:none;
+    border:none;
+    cursor:pointer;
 }
 
-.Hamburguer img {
-    width: 70px;
-    height: auto;
+.Hamburguer img{
+    width:70px;
+    height:auto;
 }
 
-.nav-menu {
-    display: none;
+/* Menu oculto */
+
+.nav-menu{
+    display:none;
 }
 
-.nav-menu.active {
-    display: block;
-    position: absolute;
-    top: 95px;
-    right: 20px;
-    background: rgba(0,0,0,0.95);
-    padding: 20px;
-    border-radius: 15px;
+/* Menu ativo */
+
+.nav-menu.active{
+    display:block;
+
+    position:absolute;
+    top:95px;
+    right:20px;
+
+    background:rgba(0,0,0,0.95);
+
+    padding:20px;
+    border-radius:15px;
 }
 
-.nav-menu.active ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
+.nav-menu.active ul{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    list-style:none;
 }
 
-.nav-menu.active a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.nav-menu.active a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-/* CONTEÚDO */
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
 
-main {
-    width: 80%;
-    max-width: 1000px;
-    margin: 40px auto;
+main{
+    width:80%;
+    max-width:1000px;
+
+    margin:40px auto;
 }
 
-h2 {
-    text-align: center;
-    color: #ff3b3b;
-    margin-bottom: 30px;
-    font-size: 2.2rem;
+/* Títulos */
+
+h2{
+    text-align:center;
+    color:#ff3b3b;
+
+    font-size:2.2rem;
+    margin-bottom:30px;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 15px;
+h3{
+    color:#ff3b3b;
+    margin-bottom:10px;
 }
 
-article {
-    background: rgba(0,0,0,0.4);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border-left: 5px solid #ff3b3b;
+/* Parágrafos */
+
+p{
+    font-size:18px;
+    margin-bottom:15px;
 }
 
-h3 {
-    color: #ff3b3b;
-    margin-bottom: 10px;
+/* Blocos */
+
+article{
+    background:rgba(0,0,0,0.4);
+
+    padding:20px;
+    margin-top:20px;
+
+    border-radius:15px;
+    border-left:5px solid #ff3b3b;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0,0,0,0.7);
-    margin-top: 30px;
+/* =========================
+   RODAPÉ
+========================= */
+
+footer{
+    text-align:center;
+
+    padding:20px;
+    margin-top:30px;
+
+    background:rgba(0,0,0,0.7);
 }
 
-/* CELULAR */
+/* =========================
+   RESPONSIVO - CELULAR
+========================= */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:500px){
 
-    body {
+    body{
         background-image:
             linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
             url("../img/WALLPAPER_VERT.png");
 
-        background-size: cover;
-        background-position: center top;
+        background-size:cover;
+        background-position:center top;
     }
 
-    .logo {
-        font-size: 2.2rem;
+    .logo{
+        font-size:2.2rem;
     }
 
-    main {
-        width: 95%;
+    main{
+        width:95%;
     }
 }
 
-/* DESKTOP */
+/* =========================
+   RESPONSIVO - DESKTOP
+========================= */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width:800px){
 
-    .Hamburguer {
-        display: none;
+    /* Esconde hamburguer */
+
+    .Hamburguer{
+        display:none;
     }
 
-    .nav-menu {
-        display: block;
+    /* Menu desktop */
+
+    .nav-menu{
+        display:block;
     }
 
-    .nav-menu ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-        align-items: center;
+    .nav-menu ul{
+        display:flex;
+        align-items:center;
+        gap:20px;
+
+        list-style:none;
     }
 
-    .nav-menu a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 5px;
+    .nav-menu a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+
+        padding:8px 12px;
+        border-radius:5px;
     }
 
-    .nav-menu a:hover {
-        background: #e53935;
+    .nav-menu a:hover{
+        background:#e53935;
     }
 }
